@@ -1,0 +1,19 @@
+{
+  "minecraftVersion": "1.21.1",
+  "modLoader": "neoforge",
+  "neoforgeVersion": "21.1.100",
+  "ram": {
+    "min": "2G",
+    "max": "4G"
+  },
+  "server": {
+    "name": "coceLand",
+    "ip": "play.example.com"
+  },
+  "mods": [
+    {
+      "name": "example-mod.jar",
+      "url": "https://example.com/example-mod.jar"
+    }
+  ]
+}

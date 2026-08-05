@@ -1,0 +1,52 @@
+{
+  "name": "coceland-launcher",
+  "productName": "coceLand",
+  "version": "1.0.0",
+  "description": "Кастомный лаунчер Minecraft: авто-скачивание версии/модов и предзаполненный сервер",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "publish": "electron-builder --publish always"
+  },
+  "author": "summerrenah0cki",
+  "license": "MIT",
+  "dependencies": {
+    "electron-updater": "^6.3.0",
+    "minecraft-launcher-core": "^3.18.1",
+    "msmc": "^4.1.1",
+    "prismarine-nbt": "^2.7.0"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "xyz.renah0cki.coceland",
+    "productName": "coceLand",
+    "files": [
+      "**/*",
+      "!**/*.map"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "meRockstar67",
+      "repo": "coceLand"
+    }
+  }
+}

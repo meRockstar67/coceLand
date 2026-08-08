@@ -1,19 +1,440 @@
 {
   "minecraftVersion": "1.21.1",
   "modLoader": "neoforge",
-  "neoforgeVersion": "21.1.100",
+  "neoforgeVersion": "21.1.244",
+  "javaPath": "java",
   "ram": {
     "min": "2G",
     "max": "4G"
   },
   "server": {
     "name": "coceLand",
-    "ip": "play.example.com"
+    "ip": "mc.hypixel.net"
   },
   "mods": [
     {
-      "name": "example-mod.jar",
-      "url": "https://example.com/example-mod.jar"
+      "name": "uilib-9.0.0-neoforge.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FAOEDs9Al%2Fversions%2FXSWl7TVm%2Fuilib-9.0.0-neoforge.jar"
+    },
+    {
+      "name": "CBCmoreshells-1.2.2.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FGwl4VXlb%2Fversions%2FHDOFIPVS%2FCBCmoreshells-1.2.2.jar"
+    },
+    {
+      "name": "player-animation-lib-forge-2.0.4+1.21.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FgedNE4y2%2Fversions%2FHJZB6bmA%2Fplayer-animation-lib-forge-2.0.4%252B1.21.1.jar"
+    },
+    {
+      "name": "yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2F1eAoo2KR%2Fversions%2F7TVdVtxF%2Fyet_another_config_lib_v3-3.8.2%252B1.21.1-neoforge.jar"
+    },
+    {
+      "name": "ferritecore-7.0.3-neoforge.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FuXXizFIs%2Fversions%2Fx7kQWVju%2Fferritecore-7.0.3-neoforge.jar"
+    },
+    {
+      "name": "xaerominimap-neoforge-1.21.1-26.4.2.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2F1bokaNcj%2Fversions%2FJXvcT1hp%2Fxaerominimap-neoforge-1.21.1-26.4.2.jar"
+    },
+    {
+      "name": "sablecleanup-0.3.0.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FwVnz7KNf%2Fversions%2FuRRVItgd%2Fsablecleanup-0.3.0.jar"
+    },
+    {
+      "name": "dimworldborder-1.21.1-1.1.1-universal.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FKNfZi3IU%2Fversions%2Fgfbd1zeB%2Fdimworldborder-1.21.1-1.1.1-universal.jar"
+    },
+    {
+      "name": "reliable_remover-neoforge-1.21.1-2.10.3.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FpLxsKvNt%2Fversions%2FYtSrnQGt%2Freliable_remover-neoforge-1.21.1-2.10.3.jar"
+    },
+    {
+      "name": "emotecraft-for-MC1.21.1-2.4.12-neoforge.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FpZ2wrerK%2Fversions%2Ffu6N0NgM%2Femotecraft-for-MC1.21.1-2.4.12-neoforge.jar"
+    },
+    {
+      "name": "createschematicchecker-1.21.27-6.0-neoforge-1.21.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FULzrAD1U%2Fversions%2F9ZsQlGjy%2Fcreateschematicchecker-1.21.27-6.0-neoforge-1.21.1.jar"
+    },
+    {
+      "name": "create_radar-0.4.9.4-1.21.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FBLu2Yqfq%2Fversions%2FAntNFNAx%2Fcreate_radar-0.4.9.4-1.21.1.jar"
+    },
+    {
+      "name": "architectury-13.0.11-neoforge.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FlhGA9TYQ%2Fversions%2F1IiqEQGl%2Farchitectury-13.0.11-neoforge.jar"
+    },
+    {
+      "name": "createschematichelper-neoforge-mc1.21.1-2.0.3.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FvDsPXWBh%2Fversions%2Fghn7StYe%2Fcreateschematichelper-neoforge-mc1.21.1-2.0.3.jar"
+    },
+    {
+      "name": "entityculling-neoforge-1.10.5-mc1.21.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FNNAgCjsB%2Fversions%2F5zRIon6w%2Fentityculling-neoforge-1.10.5-mc1.21.1.jar"
+    },
+    {
+      "name": "CreateFastSchematicCannon-1.4.1-neoforge-1.21.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FDebMSCVn%2Fversions%2Fe70DdjWe%2FCreateFastSchematicCannon-1.4.1-neoforge-1.21.1.jar"
+    },
+    {
+      "name": "NoChatReports-NEOFORGE-1.21.1-v2.9.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FqQyHxfxd%2Fversions%2FZV8eL55E%2FNoChatReports-NEOFORGE-1.21.1-v2.9.1.jar"
+    },
+    {
+      "name": "create-access-denied-0.0.4+c6.0.10.mc1.21.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2Fl7OfHLkp%2Fversions%2Fg0JvLmzZ%2Fcreate-access-denied-0.0.4%252Bc6.0.10.mc1.21.1.jar"
+    },
+    {
+      "name": "LocatorBar-neoforge-1.1.2+1.21.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FBD7N7OcY%2Fversions%2FNCjPfgUa%2FLocatorBar-neoforge-1.1.2%252B1.21.1.jar"
+    },
+    {
+      "name": "Geophilic v3.6.mod.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2Fhl5OLM95%2Fversions%2FjDzSPLta%2FGeophilic%2520v3.6.mod.jar"
+    },
+    {
+      "name": "createfood-neoforge-1.21.1-2.6.0.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2F4HnO3el1%2Fversions%2FlwDDGkVQ%2Fcreatefood-neoforge-1.21.1-2.6.0.jar"
+    },
+    {
+      "name": "NoChatRestrictions-NeoForge-MC1.21.11-v1.0.0.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2Fz440MEwJ%2Fversions%2FGtCgmBXp%2FNoChatRestrictions-NeoForge-MC1.21.11-v1.0.0.jar"
+    },
+    {
+      "name": "spark-1.10.124-neoforge.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2Fl6YH9Als%2Fversions%2Fv5qtqRQi%2Fspark-1.10.124-neoforge.jar"
+    },
+    {
+      "name": "CreateLazyTick-2.4.9-6.0.x-neoforge-1.21.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FZ0d7hFh4%2Fversions%2FDx5cIwDo%2FCreateLazyTick-2.4.9-6.0.x-neoforge-1.21.1.jar"
+    },
+    {
+      "name": "CreateCyberGoggles-1.21.1-8.2.0-NeoForge.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FTlQAWQCY%2Fversions%2F81qCfsa7%2FCreateCyberGoggles-1.21.1-8.2.0-NeoForge.jar"
+    },
+    {
+      "name": "Controlling-neoforge-1.21.1-19.0.5.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2Fxv94TkTM%2Fversions%2FFaNppCJJ%2FControlling-neoforge-1.21.1-19.0.5.jar"
+    },
+    {
+      "name": "ntgl-1.21.1-3.1.7.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2F5m2kV8xK%2Fversions%2Fjo2okC23%2Fntgl-1.21.1-3.1.7.jar"
+    },
+    {
+      "name": "reliable_advancements-neoforge-1.21.1-4.0.2.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FxVwaUG1g%2Fversions%2FBPibMVHD%2Freliable_advancements-neoforge-1.21.1-4.0.2.jar"
+    },
+    {
+      "name": "modernfix-neoforge-5.27.20+mc1.21.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FnmDcB62a%2Fversions%2FVsJnrw8k%2Fmodernfix-neoforge-5.27.20%252Bmc1.21.1.jar"
+    },
+    {
+      "name": "createcardboardthings-1.21.1-1.0.2.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FdlPwy4N0%2Fversions%2FqxU8vBRl%2Fcreatecardboardthings-1.21.1-1.0.2.jar"
+    },
+    {
+      "name": "create_ultimate_factory-2.2.4-neoforge-1.21.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FN9QToVpw%2Fversions%2FAEMRNsNS%2Fcreate_ultimate_factory-2.2.4-neoforge-1.21.1.jar"
+    },
+    {
+      "name": "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FaC3cM3Vq%2Fversions%2F9I21YYxf%2FMouseTweaks-neoforge-mc1.21-2.26.1.jar"
+    },
+    {
+      "name": "create_netherless-2.0.0-1.21.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2F6YVagaSv%2Fversions%2FkrSe5fet%2Fcreate_netherless-2.0.0-1.21.1.jar"
+    },
+    {
+      "name": "emberstextapi-neoforge-1.21.1-2.9.4.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FOVSg4uGN%2Fversions%2FfW18v6zs%2Femberstextapi-neoforge-1.21.1-2.9.4.jar"
+    },
+    {
+      "name": "cloth-config-15.0.140-neoforge.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2F9s6osm5g%2Fversions%2FizKINKFg%2Fcloth-config-15.0.140-neoforge.jar"
+    },
+    {
+      "name": "xaeroworldmap-neoforge-1.21.1-1.44.2.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FNcUtCpym%2Fversions%2F55gtOc9Y%2Fxaeroworldmap-neoforge-1.21.1-1.44.2.jar"
+    },
+    {
+      "name": "xaerotrainmap-1.0.0.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FOv2r3aVY%2Fversions%2FmgDpAA4x%2Fxaerotrainmap-1.0.0.jar"
+    },
+    {
+      "name": "servercore-neoforge-1.5.19+1.21.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2F4WWQxlQP%2Fversions%2F6N9hXiRa%2Fservercore-neoforge-1.5.19%252B1.21.1.jar"
+    },
+    {
+      "name": "nomobfarm-neoforge-1.6.7.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FPqq824CC%2Fversions%2FWEusOEZU%2Fnomobfarm-neoforge-1.6.7.jar"
+    },
+    {
+      "name": "ears-neoforge-1.21-1.4.7.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FmfzaZK3Z%2Fversions%2FDxc2NR3x%2Fears-neoforge-1.21-1.4.7.jar"
+    },
+    {
+      "name": "insanelib-2.4.21.2.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FUSZyvOJq%2Fversions%2F3nShmMYG%2Finsanelib-2.4.21.2.jar"
+    },
+    {
+      "name": "entity_texture_features_1.21-neoforge-7.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FBVzZfTc1%2Fversions%2FYEMROAHv%2Fentity_texture_features_1.21-neoforge-7.1.jar"
+    },
+    {
+      "name": "reliable_recount-neoforge-1.21.1-2.0.3.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FKZ2nVYZL%2Fversions%2FZRrnmwsV%2Freliable_recount-neoforge-1.21.1-2.0.3.jar"
+    },
+    {
+      "name": "create_jetpack-forge-5.1.2.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FUbFnAd4l%2Fversions%2F4Ndp4d21%2Fcreate_jetpack-forge-5.1.2.jar"
+    },
+    {
+      "name": "yamlconfig-9.0.0-neoforge.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FL1FFB418%2Fversions%2FKDUgkC1O%2Fyamlconfig-9.0.0-neoforge.jar"
+    },
+    {
+      "name": "create_generators-1.2.5-neoforge-1.21.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FaeW9oim1%2Fversions%2FV6LRJNSI%2Fcreate_generators-1.2.5-neoforge-1.21.1.jar"
+    },
+    {
+      "name": "createrailgrinding-1.2.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2Fix2S0LbR%2Fversions%2FqoqegiyD%2Fcreaterailgrinding-1.2.1.jar"
+    },
+    {
+      "name": "iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FYL57xq9U%2Fversions%2FKduFYu4t%2Firis-neoforge-1.8.14-beta.1%252Bmc1.21.1.jar"
+    },
+    {
+      "name": "YungsApi-1.21.1-NeoForge-5.1.6.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FUa7DFN59%2Fversions%2FZB22DE9q%2FYungsApi-1.21.1-NeoForge-5.1.6.jar"
+    },
+    {
+      "name": "entity_model_features-3.2.4-1.21-neoforge.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2F4I1XuqiY%2Fversions%2FPAYgk63v%2Fentity_model_features-3.2.4-1.21-neoforge.jar"
+    },
+    {
+      "name": "moreculling-neoforge-1.21.1-1.0.9.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2F51shyZVL%2Fversions%2FcJQs4xht%2Fmoreculling-neoforge-1.21.1-1.0.9.jar"
+    },
+    {
+      "name": "Paxi-1.21.1-NeoForge-5.1.3.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FCU0PAyzb%2Fversions%2FCLZfFbCx%2FPaxi-1.21.1-NeoForge-5.1.3.jar"
+    },
+    {
+      "name": "aerocopycats-1.1.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FwjpmYU1u%2Fversions%2FwsXjRa7l%2Faerocopycats-1.1.1.jar"
+    },
+    {
+      "name": "create-gunsmithing-1.21.1-1.4.8.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2F7KCNsGPM%2Fversions%2FCP41sDUo%2Fcreate-gunsmithing-1.21.1-1.4.8.jar"
+    },
+    {
+      "name": "disconnect-packet-fix-neoforge-2.0.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2Frd9rKuJT%2Fversions%2FyjTKEIL5%2Fdisconnect-packet-fix-neoforge-2.0.1.jar"
+    },
+    {
+      "name": "displaydelight-1.7.0.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FyXepZhp8%2Fversions%2FxiS3GrrW%2Fdisplaydelight-1.7.0.jar"
+    },
+    {
+      "name": "geckolib-neoforge-1.21.1-4.9.2.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2F8BmcQJ2H%2Fversions%2FtPkJmim6%2Fgeckolib-neoforge-1.21.1-4.9.2.jar"
+    },
+    {
+      "name": "cosmeticcorpsecompat-1.21.1-NeoForge--1.0.0.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FVrbUxhCI%2Fversions%2FNYKopfDt%2Fcosmeticcorpsecompat-1.21.1-NeoForge--1.0.0.jar"
+    },
+    {
+      "name": "crashexploitfixer-neoforge-2.0.0+1.21.4.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FZ5GdSH3X%2Fversions%2F8foOfmdZ%2Fcrashexploitfixer-neoforge-2.0.0%252B1.21.4.jar"
+    },
+    {
+      "name": "BadOptimizations-2.4.1-1.21.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2Fg96Z4WVZ%2Fversions%2FS2qthD5S%2FBadOptimizations-2.4.1-1.21.1.jar"
+    },
+    {
+      "name": "colorwheel-neoforge-1.2.9+mc1.21.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FBzHgFoGz%2Fversions%2FUhs2KYar%2Fcolorwheel-neoforge-1.2.9%252Bmc1.21.1.jar"
+    },
+    {
+      "name": "createbetterfps-1.21.1-1.1.4.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FlMYIHZNH%2Fversions%2FQWqEdWHy%2Fcreatebetterfps-1.21.1-1.1.4.jar"
+    },
+    {
+      "name": "plasmovoice-neoforge-1.21.1-2.1.13.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2F1bZhdhsH%2Fversions%2FSCojmeXV%2Fplasmovoice-neoforge-1.21.1-2.1.13.jar"
+    },
+    {
+      "name": "FarmersDelight-1.21.1-1.3.2.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FR2OftAxM%2Fversions%2FGbNuOZ4S%2FFarmersDelight-1.21.1-1.3.2.jar"
+    },
+    {
+      "name": "create_connected-1.3.2-mc1.21.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FVg5TIO6d%2Fversions%2FklOWKza5%2Fcreate_connected-1.3.2-mc1.21.1.jar"
+    },
+    {
+      "name": "ImmediatelyFast-NeoForge-1.6.11+1.21.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2F5ZwdcRci%2Fversions%2FzxT50PTW%2FImmediatelyFast-NeoForge-1.6.11%252B1.21.1.jar"
+    },
+    {
+      "name": "lambdynamiclights-4.8.10+1.21.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FyBW8D80W%2Fversions%2FDZDOX6ps%2Flambdynamiclights-4.8.10%252B1.21.1.jar"
+    },
+    {
+      "name": "blueprint-1.21.1-8.1.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FVsM5EDoI%2Fversions%2FLMGtMapI%2Fblueprint-1.21.1-8.1.1.jar"
+    },
+    {
+      "name": "lithium-neoforge-0.15.4+mc1.21.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FgvQqBUqZ%2Fversions%2FDDUrRVCA%2Flithium-neoforge-0.15.4%252Bmc1.21.1.jar"
+    },
+    {
+      "name": "personality-1.21.1-5.0.2.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FzrAMu1nt%2Fversions%2FGQKsKYS3%2Fpersonality-1.21.1-5.0.2.jar"
+    },
+    {
+      "name": "reliable_recipes-neoforge-1.21.1-2.2.0.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FHl4ARA1z%2Fversions%2FnL9DaN74%2Freliable_recipes-neoforge-1.21.1-2.2.0.jar"
+    },
+    {
+      "name": "tinymobfarm-1.5.2-1.21-neoforge.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FfhAM8VCH%2Fversions%2F57z0vz3m%2Ftinymobfarm-1.5.2-1.21-neoforge.jar"
+    },
+    {
+      "name": "emi-1.1.24+1.21.1+neoforge.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FfRiHVvU7%2Fversions%2F5sIPA1To%2Femi-1.1.24%252B1.21.1%252Bneoforge.jar"
+    },
+    {
+      "name": "createbigcannons-5.11.7+mc.1.21.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FGWp4jCJj%2Fversions%2FbOiDu0LS%2Fcreatebigcannons-5.11.7%252Bmc.1.21.1.jar"
+    },
+    {
+      "name": "Searchables-neoforge-1.21.1-1.0.2.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2Ffuuu3xnx%2Fversions%2FiEE85X0w%2FSearchables-neoforge-1.21.1-1.0.2.jar"
+    },
+    {
+      "name": "sable-neoforge-1.21.1-2.0.3.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FT9PomCSv%2Fversions%2F1L6XJqnY%2Fsable-neoforge-1.21.1-2.0.3.jar"
+    },
+    {
+      "name": "resource_gamma_util-neoforge-1.21.1-1.4.0.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FX8jWsfhs%2Fversions%2FNx6kXJFH%2Fresource_gamma_util-neoforge-1.21.1-1.4.0.jar"
+    },
+    {
+      "name": "sodium-neoforge-0.8.12+mc1.21.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FAANobbMI%2Fversions%2FS3DUMfBo%2Fsodium-neoforge-0.8.12%252Bmc1.21.1.jar"
+    },
+    {
+      "name": "chloride-NEOFORGE-mc1.21.1-v1.8.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FyD9qW65f%2Fversions%2FIgWRdE2d%2Fchloride-NEOFORGE-mc1.21.1-v1.8.1.jar"
+    },
+    {
+      "name": "create-1.21.1-6.0.10.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FLNytGWDc%2Fversions%2FUjX6dr61%2Fcreate-1.21.1-6.0.10.jar"
+    },
+    {
+      "name": "create-aeronautics-bundled-1.21.1-1.3.0.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FoWaK0Q19%2Fversions%2Fw7zlLnea%2Fcreate-aeronautics-bundled-1.21.1-1.3.0.jar"
+    },
+    {
+      "name": "c2me-neoforge-mc1.21.1-0.4.0-alpha.0.116.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FCOlSi5iR%2Fversions%2F5Q757s3v%2Fc2me-neoforge-mc1.21.1-0.4.0-alpha.0.116.jar"
+    },
+    {
+      "name": "copycats-3.0.4+mc.1.21.1-neoforge.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FUT2M39wf%2Fversions%2FkecZ0sl7%2Fcopycats-3.0.4%252Bmc.1.21.1-neoforge.jar"
+    },
+    {
+      "name": "ritchiesprojectilelib-2.1.2-mc.1.21.1-neoforge.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FB3pb093D%2Fversions%2FhZ6B2Z0x%2Fritchiesprojectilelib-2.1.2%252Bmc.1.21.1-neoforge.jar"
+    },
+    {
+      "name": "jei-1.21.1-neoforge-19.39.0.370.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2Fu6dRKJwZ%2Fversions%2FP6MOayB0%2Fjei-1.21.1-neoforge-19.39.0.370.jar"
+    },
+    {
+      "name": "appleskin-neoforge-mc1.21-3.0.9.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FEsAfCjCV%2Fversions%2FuAKA6Laj%2Fappleskin-neoforge-mc1.21-3.0.9.jar"
+    },
+    {
+      "name": "balm-neoforge-1.21.1-21.0.63.jar",
+      "url": "https://github.com/meRockstar67/coceLand/releases/download/mods-v1/balm-neoforge-1.21.1-21.0.63.jar"
+    },
+    {
+      "name": "citresewn-neoforge-1.21.1-0.jar",
+      "url": "https://github.com/meRockstar67/coceLand/releases/download/mods-v1/citresewn-neoforge-1.21.1-0.jar"
+    },
+    {
+      "name": "clientcrafting-1.21-2.1.jar",
+      "url": "https://github.com/meRockstar67/coceLand/releases/download/mods-v1/clientcrafting-1.21-2.1.jar"
+    },
+    {
+      "name": "corpse-neoforge-1.21.1-1.1.13.jar",
+      "url": "https://github.com/meRockstar67/coceLand/releases/download/mods-v1/corpse-neoforge-1.21.1-1.1.13.jar"
+    },
+    {
+      "name": "cosmeticarmorreworked-1.21.1-v1-neoforge.jar",
+      "url": "https://github.com/meRockstar67/coceLand/releases/download/mods-v1/cosmeticarmorreworked-1.21.1-v1-neoforge.jar"
+    },
+    {
+      "name": "crashutilities-9.0.4.jar",
+      "url": "https://github.com/meRockstar67/coceLand/releases/download/mods-v1/crashutilities-9.0.4.jar"
+    },
+    {
+      "name": "cupboard-1.21.1-3.9.jar",
+      "url": "https://github.com/meRockstar67/coceLand/releases/download/mods-v1/cupboard-1.21.1-3.9.jar"
+    },
+    {
+      "name": "defaultoptions-neoforge-1.21.1-21.1.7.jar",
+      "url": "https://github.com/meRockstar67/coceLand/releases/download/mods-v1/defaultoptions-neoforge-1.21.1-21.1.7.jar"
+    },
+    {
+      "name": "easy-villagers-neoforge-1.21.1-1.1.42.jar",
+      "url": "https://github.com/meRockstar67/coceLand/releases/download/mods-v1/easy-villagers-neoforge-1.21.1-1.1.42.jar"
+    },
+    {
+      "name": "kotlinforforge-5.12.0-all.jar",
+      "url": "https://github.com/meRockstar67/coceLand/releases/download/mods-v1/kotlinforforge-5.12.0-all.jar"
+    },
+    {
+      "name": "kubejs-create-neoforge-2101.3.1-build.18.jar",
+      "url": "https://github.com/meRockstar67/coceLand/releases/download/mods-v1/kubejs-create-neoforge-2101.3.1-build.18.jar"
+    },
+    {
+      "name": "kubejs-neoforge-2101.7.2-build.368.jar",
+      "url": "https://github.com/meRockstar67/coceLand/releases/download/mods-v1/kubejs-neoforge-2101.7.2-build.368.jar"
+    },
+    {
+      "name": "netherportalfix-neoforge-1.21.1-21.1.1.jar",
+      "url": "https://github.com/meRockstar67/coceLand/releases/download/mods-v1/netherportalfix-neoforge-1.21.1-21.1.1.jar"
+    },
+    {
+      "name": "rhino-2101.2.7-build.85.jar",
+      "url": "https://github.com/meRockstar67/coceLand/releases/download/mods-v1/rhino-2101.2.7-build.85.jar"
+    },
+    {
+      "name": "sable_xaero_bridge-0.1.11.jar",
+      "url": "https://github.com/meRockstar67/coceLand/releases/download/mods-v1/sable_xaero_bridge-0.1.11.jar"
+    },
+    {
+      "name": "smoothmovement-1.21.1-2.7.jar",
+      "url": "https://github.com/meRockstar67/coceLand/releases/download/mods-v1/smoothmovement-1.21.1-2.7.jar"
+    },
+    {
+      "name": "sophisticatedbackpacks-1.21.1-3.25.72.2012.jar",
+      "url": "https://github.com/meRockstar67/coceLand/releases/download/mods-v1/sophisticatedbackpacks-1.21.1-3.25.72.2012.jar"
+    },
+    {
+      "name": "sophisticatedbackpackscreateintegration-1.21.1-0.1.8.134.jar",
+      "url": "https://github.com/meRockstar67/coceLand/releases/download/mods-v1/sophisticatedbackpackscreateintegration-1.21.1-0.1.8.134.jar"
+    },
+    {
+      "name": "sophisticatedcore-1.21.1-1.4.79.2182.jar",
+      "url": "https://github.com/meRockstar67/coceLand/releases/download/mods-v1/sophisticatedcore-1.21.1-1.4.79.2182.jar"
+    },
+    {
+      "name": "lambdynamiclights-4.5.0+1.21.1.jar",
+      "url": "https://coceland-mod-proxy.superbabyrockstar.workers.dev/mod?url=https%3A%2F%2Fcdn.modrinth.com%2Fdata%2FyBW8D80W%2Fversions%2Fpg0Mcyhz%2Flambdynamiclights-4.5.0%2B1.21.1.jar"
     }
   ]
 }

@@ -9,15 +9,120 @@
   <div class="app">
     <div class="header">
       <div class="logo">coce<span>Land</span></div>
+
+      <div class="header-right">
+        <button class="icon-btn update-icon-btn" id="updateIconBtn" title="Скачать обновление и перезапустить" hidden>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+        </button>
+
+        <button class="icon-btn" id="logsBtn" title="Логи">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="4 17 10 11 4 5"></polyline>
+            <line x1="12" y1="19" x2="20" y2="19"></line>
+          </svg>
+        </button>
+        <button class="icon-btn" id="settingsBtn" title="Настройки">⚙</button>
+
+        <button class="account-card" id="accountBtn">
+          <img class="account-avatar" id="accountAvatar" src="" alt="" />
+          <span class="account-card-text">
+            <span class="account-card-name" id="accountLabel">Гость</span>
+            <span class="account-card-sub">Minecraft account</span>
+          </span>
+        </button>
+      </div>
     </div>
+
+    <img class="mascot" src="assets/mascot.png" alt="" />
 
     <div class="main">
-      <button id="playBtn" class="play-btn">ИГРАТЬ</button>
-      <button id="updateBtn" class="update-btn" hidden>ОБНОВИТЬ И ПЕРЕЗАПУСТИТЬ</button>
-      <div class="status" id="status">Готов к запуску</div>
+      <button id="playBtn" class="play-btn">УСТАНОВИТЬ</button>
+      <div class="progress-wrap" id="progressWrap" hidden>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="progress-label" id="progressLabel">0%</div>
+      </div>
+      <div class="status" id="status"></div>
     </div>
+  </div>
 
-    <div class="log" id="log"></div>
+  <div class="modal-overlay" id="accountOverlay" hidden>
+    <div class="modal">
+      <div class="modal-header">
+        <span>Аккаунт</span>
+        <button class="modal-close" id="accountClose">✕</button>
+      </div>
+
+      <div id="accountLoggedOut">
+        <div class="modal-section">
+          <div class="modal-label">Ник (для тестов, без входа)</div>
+          <div class="folder-row">
+            <input type="text" id="nicknameInput" class="nickname-input" placeholder="Введи ник" />
+            <button class="small-btn" id="nicknameSubmit">Войти</button>
+          </div>
+        </div>
+        <div class="modal-divider">или</div>
+        <div class="modal-section">
+          <button class="small-btn wide" id="msLoginBtn">Войти через Microsoft</button>
+        </div>
+      </div>
+
+      <div id="accountLoggedIn" hidden>
+        <div class="modal-section">
+          <div class="modal-label">Сейчас в системе</div>
+          <div class="folder-row">
+            <span class="folder-path" id="loggedInName">...</span>
+            <button class="small-btn" id="logoutBtn">Выйти</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="settingsOverlay" hidden>
+    <div class="modal">
+      <div class="modal-header">
+        <span>Настройки</span>
+        <button class="modal-close" id="settingsClose">✕</button>
+      </div>
+
+      <div class="modal-section">
+        <div class="modal-label">Папка установки</div>
+        <div class="folder-row">
+          <span class="folder-path" id="settingsFolderPath">...</span>
+          <button class="small-btn" id="settingsFolderBtn">Изменить</button>
+        </div>
+      </div>
+
+      <div class="modal-section">
+        <div class="modal-label">
+          Память для Minecraft: <span id="ramValueLabel">4096 МБ</span>
+        </div>
+        <input type="range" id="ramSlider" min="2048" max="32768" step="1024" value="4096" class="ram-slider" />
+        <div class="ram-marks">
+          <span>2048</span>
+          <span>8192</span>
+          <span>16384</span>
+          <span>24576</span>
+          <span>32768 МБ</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="logsOverlay" hidden>
+    <div class="modal modal-logs">
+      <div class="modal-header">
+        <span>Логи</span>
+        <button class="modal-close" id="logsClose">✕</button>
+      </div>
+      <div class="logs-box" id="logsBox"></div>
+    </div>
   </div>
 
   <script src="renderer.js"></script>

@@ -202,13 +202,18 @@ async function loadConfig() {
   try {
     const remote = await fetchJson(CONFIG_URL);
     fs.writeFileSync(CONFIG_CACHE_PATH, JSON.stringify(remote, null, 2));
+    log(`Конфиг с GitHub загружен: модов ${((remote.mods || []).length)}, neoforge ${remote.neoforgeVersion}`);
     return remote;
   } catch (err) {
     log(`Не удалось получить актуальный config.json (${err.message}), использую сохранённую копию`);
     try {
-      return JSON.parse(fs.readFileSync(CONFIG_CACHE_PATH, "utf-8"));
+      const cached = JSON.parse(fs.readFileSync(CONFIG_CACHE_PATH, "utf-8"));
+      log(`Используется закэшированный конфиг: модов ${((cached.mods || []).length)}`);
+      return cached;
     } catch {
-      return JSON.parse(fs.readFileSync(CONFIG_PATH, "utf-8"));
+      const bundled = JSON.parse(fs.readFileSync(CONFIG_PATH, "utf-8"));
+      log(`Используется вшитый в лаунчер конфиг: модов ${((bundled.mods || []).length)}`);
+      return bundled;
     }
   }
 }
@@ -263,6 +268,15 @@ async function syncMods(mcDir, cfg, from, to) {
 
   const mods = cfg.mods || [];
   const span = to - from;
+  const expectedNames = new Set(mods.map((m) => m.name));
+
+  // убираем моды, которых больше нет в актуальном списке (например, убрали из сборки)
+  for (const file of fs.readdirSync(modsDir)) {
+    if (!expectedNames.has(file)) {
+      fs.unlinkSync(path.join(modsDir, file));
+      log(`Удалён устаревший мод: ${file}`);
+    }
+  }
 
   for (let i = 0; i < mods.length; i++) {
     const mod = mods[i];

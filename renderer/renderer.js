@@ -24,6 +24,7 @@ const logsClose = document.getElementById("logsClose");
 const logsBox = document.getElementById("logsBox");
 
 const updateIconBtn = document.getElementById("updateIconBtn");
+const contentUpdateBtn = document.getElementById("contentUpdateBtn");
 
 const settingsBtn = document.getElementById("settingsBtn");
 const settingsOverlay = document.getElementById("settingsOverlay");
@@ -39,6 +40,7 @@ let busy = false;
 
 function renderButton() {
   settingsBtn.disabled = busy;
+  contentUpdateBtn.disabled = busy;
   if (busy) {
     playBtn.disabled = true;
     return;
@@ -71,15 +73,33 @@ function setBusy(isBusy) {
   }
 }
 
+let everInstalled = false; // был ли лаунчер уже в состоянии "играбельно" в этой сессии
+
 async function refreshStatus() {
   try {
     const { needsInstall } = await window.coceland.checkStatus();
-    btnState = needsInstall ? "install" : "play";
+    if (!needsInstall) {
+      everInstalled = true;
+      contentUpdateBtn.hidden = true;
+      btnState = "play";
+    } else if (everInstalled) {
+      // раньше уже было всё установлено, а теперь чего-то не хватает -
+      // значит вышло обновление сборки (новые/другие моды)
+      contentUpdateBtn.hidden = false;
+      btnState = "play"; // основная кнопка остаётся "играть", обновление - отдельной кнопкой
+    } else {
+      btnState = "install";
+    }
   } catch {
     btnState = "install";
   }
   renderButton();
 }
+
+// периодически проверяем (раз в 2 минуты), не вышло ли обновление сборки, пока лаунчер открыт
+setInterval(() => {
+  if (!busy) refreshStatus();
+}, 2 * 60 * 1000);
 
 async function refreshAccount() {
   const account = await window.coceland.getAccount();
@@ -152,6 +172,21 @@ window.coceland.onUpdateReady(() => {
 
 updateIconBtn.addEventListener("click", () => {
   window.coceland.installUpdate();
+});
+
+contentUpdateBtn.addEventListener("click", async () => {
+  if (busy) return;
+  setBusy(true);
+  statusEl.textContent = "";
+  const result = await window.coceland.install();
+  if (result.ok) {
+    contentUpdateBtn.hidden = true;
+    statusEl.textContent = "";
+  } else {
+    statusEl.textContent = "Ошибка обновления сборки: " + result.error;
+  }
+  setBusy(false);
+  await refreshStatus();
 });
 
 window.coceland.onGameClosed(() => {
